@@ -4,8 +4,8 @@ function! zettel#makeZettel(...)
 
     " Make a unique filename
 
-    let zettelname = expand('~/Dropbox/Zettelkasten/') . strftime("%F-%H%m") . "-" . join(a:000, '-') . '.md'
+    let zettelname = expand('~/Dropbox/Zettelkasten/') . strftime("%F-%H%M") . "-" . join(a:000, '-') . '.md'
 
-    exec "e " . zettelname
+    execute "edit " . zettelname
 
 endfunc
