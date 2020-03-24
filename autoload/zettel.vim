@@ -1,6 +1,6 @@
 " Build a Zettelkasten with Vim
 
-function! zettel#makeZettel()
+function! zettel#makeZettel(...)
 
     " Make a unique filename
 
