@@ -16,10 +16,19 @@ A Zettelkasten should be a repository for knowledge and connections between item
 
 ---
 
-TODO - Make new zettel
-TODO - Search for zettels (fzf = file names, grep or ripgrep for contents?)
-TODO - tag system
-TODO - `.md` or `.zet` file?
-TODO - note history system
-TODO - like urlscan; list links outward pointing
-TODO - list links inward pointing
+* TODO - Make new zettel
+* TODO - Search for zettels (fzf = file names, grep or ripgrep for contents?)
+* TODO - tag system
+* TODO - `.md` or `.zet` file? Or maybe a folder that sets filetype (like Vimwiki)
+* TODO - note history system
+* TODO - like urlscan; list links outward pointing
+* TODO - list links inward pointing
+
+---
+
+## Make a new Zettel
+
+Sam Wallage's [Vimwayt post](https://vimways.org/2019/personal-notetaking-in-vim/) on Zettelkasten has a bunch of useful little functions and scripts.
+
+* get the current date-time
+
