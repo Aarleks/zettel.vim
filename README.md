@@ -2,8 +2,33 @@
 
 A Zettelkasten plugin for Vim
 
-A Zettelkasten should be a repository for knowledge and connections between items of knowledge. It should contain notes (zettel) that are made up of content, references, tags, and cross-references. It should also be possible to see which other notes point to a zettel.
+A Zettelkasten should be a repository for knowledge and connections between items of knowledge. It should contain notes (zettel) that are made up of content, tags, references, and cross-references. It should also be possible to see which other notes point to a zettel.
 
+## Content
+
+Zettels are `markdown` files. Write normally.
+
+## Tags
+
+Tags are represented by the ampersand character.
+
+```
+&tag &another_tag
+```
+
+The plugin uses [Ultimate CTags](aroist) to build a tag list. You can use the `Leader t` to call `:! ctags -R .`
+
+## References
+
+Rererences
+
+## Cross-References
+
+In the main, cross-references should be to other zettels. In the spirit of keeping things simple the plugin uses Vim's `goto file` function; called with the `gf` key combination.
+
+```
+[cross-reference.md]
+```
 
 ## Links
 
@@ -30,5 +55,8 @@ A Zettelkasten should be a repository for knowledge and connections between item
 
 Sam Wallage's [Vimwayt post](https://vimways.org/2019/personal-notetaking-in-vim/) on Zettelkasten has a bunch of useful little functions and scripts.
 
-* get the current date-time
+## Search for Zettel Files
+
+Search the declared Zettelkasten using fzf
+
 
