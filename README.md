@@ -18,9 +18,19 @@ Tags are represented by the ampersand character.
 
 The plugin uses [Ultimate CTags](aroist) to build a tag list. You can use the `Leader t` to call `:! ctags -R .`
 
+For this to work, you'll need to create a folder `.ctags.d/` in your Zettelkasten folder. Copy the following in to read words that begin with ampersand into your tag stack:
+
+```
+--langdef=markdowntags
+--languages=markdowntags
+--langmap=markdowntags:.md
+--kinddef-markdowntags=t,tag,tags
+--mline-regex-markdowntags=/(^|[[:space:]])&(\w\S*)/\2/t/{mgroup=1}
+```
+
 ## References
 
-Rererences
+Rererences use the syntax @reference_name, as in `vim-pandoc-syntax`.
 
 ## Cross-References
 
