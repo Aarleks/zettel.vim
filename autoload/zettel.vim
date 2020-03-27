@@ -14,6 +14,7 @@ endfunc
 " SEARCH:
 
 " Search for zettels by file name
-command! -bang ZettelFiles call fzf#vim#files('~/Dropbox/Zettelkasten', <bang>0)
-
+function! zettel#findZettel()
+    execute ":Files " . g:zettelkasten
+endfunc
 " If
