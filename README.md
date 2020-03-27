@@ -49,17 +49,17 @@ In the main, cross-references should be to other zettels. In the spirit of keepi
 [https://vimways.org/2019/personal-notetaking-in-vim/](https://vimways.org/2019/personal-notetaking-in-vim/) - Another vanilla Vim Zettelkasten, this time rolled into a plugin of sorts
 
 
----
+```
+DONE - Make new zettel
+TODO - Search for zettels by file names
+TODO - Search in zettels by content using grep or ripgrep
+TODO - Tag system: 1) make a tag, 2) search by tags
+TODO - `.md` or `.zet` file? Or maybe a folder that sets filetype (like Vimwiki)
+TODO - note history system (jumplist)
+TODO - like urlscan; list links outward pointing
+TODO - list links inward pointing
 
-* TODO - Make new zettel
-* TODO - Search for zettels (fzf = file names, grep or ripgrep for contents?)
-* TODO - tag system
-* TODO - `.md` or `.zet` file? Or maybe a folder that sets filetype (like Vimwiki)
-* TODO - note history system
-* TODO - like urlscan; list links outward pointing
-* TODO - list links inward pointing
-
----
+```
 
 ## Make a new Zettel
 
