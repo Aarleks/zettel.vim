@@ -51,7 +51,7 @@ In the main, cross-references should be to other zettels. In the spirit of keepi
 
 ```
 DONE - Make new zettel
-TODO - Search for zettels by file names
+DONE - Search for zettels by file names
 TODO - Search in zettels by content using grep or ripgrep
 TODO - Tag system: 1) make a tag, 2) search by tags
 TODO - `.md` or `.zet` file? Or maybe a folder that sets filetype (like Vimwiki)
