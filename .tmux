@@ -16,6 +16,7 @@ tmux new-session -d -s zettel -n main
 tmux send-keys -t zettel:main "nvim -c Files" Enter
 tmux split-window -t zettel:main -h -c "$PWD"
 tmux send-keys -t zettel:main.right "git pull" Enter
+tmux send-keys -t zettel:main.right "git status" Enter
 
 # Start it up!
 tmux attach -t zettel:main.left
