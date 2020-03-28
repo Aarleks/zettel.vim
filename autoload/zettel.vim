@@ -7,7 +7,7 @@
 " Create a new zettel
 function! zettel#makeZettel(...)
     " Make a unique filename
-    let zettelname = g:zettelkasten . strftime("%F-%H%M") . "-" . join(a:000, '-') . '.md'
+    let zettelname = g:zettelkasten . strftime("%Y-%H%M") . "-" . join(a:000, '-') . '.md'
     execute "edit " . zettelname
 endfunc
 
