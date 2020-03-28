@@ -7,9 +7,13 @@
 " Create a new zettel
 function! zettel#makeZettel(...)
     " Make a unique filename
-    let zettelname = g:zettelkasten . strftime("%Y-%H%M") . "-" . join(a:000, '-') . '.md'
+    let zettelname = g:zettelkasten . strftime("%Y-%m%d-%H%M") . "_" . join(a:000, '-') . '.md'
     execute "edit " . zettelname
 endfunc
+
+" Create a new zettel from visual selection
+" put zettel link markers around the text
+" create a file in g:zettelkasten with strftime(%Y-%m%d-%H%M)
 
 " SEARCH:
 
