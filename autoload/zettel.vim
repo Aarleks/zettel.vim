@@ -19,4 +19,4 @@ function! zettel#findZettel()
     execute ":Files " . g:zettelkasten
 endfunc
 
-autocmd BufWritePost g:zettelkasten !ctager -R .
+autocmd BufWritePost g:zettelkasten !ctags -R .
