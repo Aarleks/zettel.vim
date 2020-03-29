@@ -1,9 +1,4 @@
 " For commands and leader combinations
-
-
-
-
-
 " <Leader>zl = insert link markers and put the cursor inside <C-x><C-f>
 " <Leader>z
 " <Leader>z

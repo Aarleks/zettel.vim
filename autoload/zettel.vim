@@ -11,9 +11,6 @@ function! zettel#makeZettel(...)
     execute "edit " . zettelname
 endfunc
 
-" Create a new zettel from visual selection
-" put zettel link markers around the text
-" create a file in g:zettelkasten with strftime(%Y-%m%d-%H%M)
 
 " SEARCH:
 
