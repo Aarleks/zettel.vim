@@ -18,4 +18,5 @@ endfunc
 function! zettel#findZettel()
     execute ":Files " . g:zettelkasten
 endfunc
-" If
+
+autocmd BufWritePost g:zettelkasten !ctager -R .

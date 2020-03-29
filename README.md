@@ -6,7 +6,7 @@ A Zettelkasten should be a repository for knowledge and connections between item
 
 ## Content
 
-Zettels are `markdown` files. Write normally.
+In this plugin, zettels are `markdown` files. Write normally.
 
 ## Tags
 
@@ -52,9 +52,8 @@ In the main, cross-references should be to other zettels. In the spirit of keepi
 ```
 DONE - Make new zettel
 DONE - Search for zettels by file names
-TODO - Search in zettels by content using grep or ripgrep
+DONE - Search in zettels by content using grep or ripgrep
 TODO - Tag system: 1) make a tag, 2) search by tags
-TODO - `.md` or `.zet` file? Or maybe a folder that sets filetype (like Vimwiki)
 TODO - note history system (jumplist)
 TODO - like urlscan; list links outward pointing
 TODO - list links inward pointing
