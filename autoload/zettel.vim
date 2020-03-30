@@ -12,7 +12,7 @@ function! zettel#makeZettel(...) abort
 endfunc
 
 " Ctags
-function! s:zettel#makeTags() abort
+function! zettel#makeTags() abort
     execute "!ctags -R ."
 endfunc
 
