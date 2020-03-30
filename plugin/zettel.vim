@@ -5,7 +5,7 @@
 " <Leader>z
 " <Leader>z
 
-autocmd BufWritePost '$HOME/Dropbox/Zettelkasten/'
+autocmd BufWritePost,BufLeave $HOME/Dropbox/Zettelkasten/
 	    \ call zettel#makeTags()
 
 " <Leader>zm = make a new zettel
