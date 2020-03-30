@@ -5,7 +5,7 @@
 
 " CREATE:
 " Create a new zettel
-function! zettel#makeZettel(...)
+function! zettel#makeZettel(...) abort
     " Make a unique filename
     let zettelname = g:zettelkasten . strftime("%Y-%m%d-%H%M") . "_" . join(a:000, '-') . '.md'
     execute "edit " . zettelname
