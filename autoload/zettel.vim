@@ -11,6 +11,12 @@ function! zettel#makeZettel(...) abort
     execute "edit " . zettelname
 endfunc
 
+" Ctags
+function! s:zettel#makeTags() abort
+    let l:cmd = 'ctags -R .'
+
+    return l:cmd
+endfunc
 
 " SEARCH:
 
