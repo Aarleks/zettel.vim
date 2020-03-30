@@ -13,15 +13,13 @@ endfunc
 
 " Ctags
 function! s:zettel#makeTags() abort
-    let l:cmd = 'ctags -R .'
-
-    return l:cmd
+    execute "!ctags -R ."
 endfunc
 
 " SEARCH:
 
 " Search for zettels by file name
-function! zettel#findZettel()
+function! zettel#findZettel() abort
     execute ":Files " . g:zettelkasten
 endfunc
 
