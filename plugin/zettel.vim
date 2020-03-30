@@ -5,7 +5,7 @@
 " <Leader>z
 " <Leader>z
 
-autocmd BufWritePost * call s:zettel#makeTags()
+autocmd BufWritePost * call zettel#makeTags()
 
 " <Leader>zm = make a new zettel
 command! -nargs=* MakeZettel call zettel#makeZettel(<f-args>)
