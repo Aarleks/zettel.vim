@@ -5,8 +5,8 @@
 " <Leader>z
 " <Leader>z
 
-"autocmd BufWritePost ~/Dropbox/Zettelkasten
-"	    \ call zettel#makeTags()
+autocmd BufWritePost '$HOME/Dropbox/Zettelkasten/'
+	    \ call zettel#makeTags()
 
 " <Leader>zm = make a new zettel
 command! -nargs=* MakeZettel call zettel#makeZettel(<f-args>)
