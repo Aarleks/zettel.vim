@@ -12,10 +12,10 @@ function! zettel#makeZettel(...) abort
 endfunc
 
 " Ctags
-function! zettel#makeTags() abort
-    execute silent . "!ctags -R ."
-    execute redraw!
-endfunc
+"function! zettel#makeTags() abort
+"    execute silent . "!ctags -R ."
+"    execute redraw!
+"endfunc
 
 " SEARCH:
 
