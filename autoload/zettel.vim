@@ -19,4 +19,3 @@ function! zettel#findZettel()
     execute ":Files " . g:zettelkasten
 endfunc
 
-autocmd BufWritePost $HOME/Dropbox/Zettelkasten !ctags -R .
