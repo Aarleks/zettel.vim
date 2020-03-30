@@ -14,6 +14,7 @@ endfunc
 " Ctags
 function! zettel#makeTags() abort
     execute "!ctags -R ."
+    execute redraw!
 endfunc
 
 " SEARCH:
