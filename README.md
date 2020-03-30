@@ -53,7 +53,8 @@ In the main, cross-references should be to other zettels. In the spirit of keepi
 DONE - Make new zettel
 DONE - Search for zettels by file names
 DONE - Search in zettels by content using grep or ripgrep
-TODO - Tag system: 1) make a tag, 2) search by tags
+DONE - Tag system: 1) make a tag, 2) search by tags
+TODO - non-goyo focussed writing for Zettel buffers
 TODO - note history system (jumplist)
 TODO - like urlscan; list links outward pointing
 TODO - list links inward pointing
