@@ -13,8 +13,8 @@ endfunc
 
 " Ctags
 function! zettel#makeTags() abort
-    execute "silent" . "!ctags -R ."
-    execute "redraw!"
+    execute "!ctags -R ."
+    "execute "redraw!"
 endfunc
 
 " SEARCH:
