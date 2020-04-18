@@ -1,6 +1,0 @@
-*zettel.txt* A Vim plugin for building a Luhman-esque slipbox
-
-Author: Alex Norman
-License: Same terms as Vim itself (see |license|)
-
-INTRODUCTION

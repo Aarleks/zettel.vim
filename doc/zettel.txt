@@ -1,0 +1,12 @@
+*zettel.txt* A Vim plugin for building a Luhmann-esque note box
+
+Author: Alex Norman
+License: Same terms as Vim itself (see |license|)
+
+INTRODUCTION                                    *zettel*
+
+A Zettelkasten is a box of notes. Sometimes it's referred to as a 'slip-box' -
+a box of slips of paper.
+
+
+ vim:tw=78:filetype=help:expandtab
