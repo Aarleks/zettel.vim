@@ -7,6 +7,7 @@
 
 autocmd BufWritePost $HOME/Dropbox/Zettelkasten/*
 	    \ call zettel#makeTags()
+autocmd BufRead,BufNewFile g:zettelkasten . '/*' set filetype zettel
 
 " <Leader>zz = open zettelhome
 nnoremap <Leader>zz :call zettel#zettelHome()<CR>
@@ -27,3 +28,4 @@ nnoremap <Leader>zs :RG ''<CR>
 
 " <Leader>zt = tag-search the zettelkasten using fzf.vim
 nnoremap <Leader>zt :Tags<CR>
+

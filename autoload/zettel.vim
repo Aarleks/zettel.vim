@@ -13,6 +13,7 @@ set cpo&vim
 " zettel-of-the-day
 function! zettel#zettelHome() abort
     execute "edit " . g:zettelkasten . "home.md"
+    execute "Goyo"
 endfunction
 
 " CREATE:
