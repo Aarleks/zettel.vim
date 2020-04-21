@@ -9,7 +9,7 @@ autocmd BufWritePost $HOME/Dropbox/Zettelkasten/*
 	    \ call zettel#makeTags()
 
 " <Leader>zz = open zettelhome
-nnoremap <Leader>zz :call zettel#zettelHome
+nnoremap <Leader>zz :call zettel#zettelHome()<CR>
 
 " <Leader>zm = make a new zettel
 command! -nargs=* MakeZettel call zettel#makeZettel(<f-args>)
