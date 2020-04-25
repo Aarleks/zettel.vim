@@ -34,7 +34,7 @@ endfunction
 " SEARCH:
 
 " Search for zettels by file name
-function! zettel#openZettel() abort
+function! zettel#findZettel() abort
     execute "fzf#vim#files(g:zettelkasten)"
     execute "Goyo"
 endfunction
