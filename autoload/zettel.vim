@@ -35,7 +35,7 @@ endfunction
 
 " Search for zettels by file name
 function! zettel#findZettel() abort
-    execute ":Files " . g:zettelkasten
+    execute ":call fzf#vim#files(g:zettelkasten, <bang>0)"
 endfunction
 
 " Return compatible options to user's settings
