@@ -18,7 +18,7 @@ nnoremap <Leader>zm :MakeZettel
 " <Leader>zf = find a zettel by filename using fzf.vim
 command! -bang FindZettel call fzf#vim#files(g:zettelkasten, <bang>0)
 
-nnoremap <Leader>zf :FindZettel<CR>
+nnoremap <Leader>zf :FindZettel<CR> | :Goyo
 
 " Search the file contents of the zettelkasten with ripgrep and fzf.vim
 " Assumes the current working directory is the zettelkasten

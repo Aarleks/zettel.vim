@@ -34,8 +34,10 @@ endfunction
 " SEARCH:
 
 " Search for zettels by file name
-function! zettel#findZettel() abort
-    execute ":call fzf#vim#files(g:zettelkasten, <bang>0)"
+function! zettel#openZettel(file) abort
+    let s:zettelFile=a:file
+    execute "edit " . zettelFile
+    execute "Goyo"
 endfunction
 
 " Return compatible options to user's settings
