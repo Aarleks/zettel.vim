@@ -5,9 +5,8 @@
 " <Leader>z
 " <Leader>z
 
-autocmd BufWritePost $HOME/Dropbox/Zettelkasten/*
+autocmd BufWritePost g:zettelkasten
 	    \ call zettel#makeTags()
-autocmd BufRead,BufNewFile g:zettelkasten . '/*' set filetype zettel
 
 " <Leader>zz = open zettelhome
 nnoremap <Leader>zz :call zettel#zettelHome()<CR>
