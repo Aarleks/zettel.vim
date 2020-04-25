@@ -16,7 +16,8 @@ command! -nargs=* MakeZettel call zettel#makeZettel(<f-args>)
 nnoremap <Leader>zm :MakeZettel
 
 " <Leader>zf = find a zettel by filename using fzf.vim
-command! -nargs=* FindZettel call zettel#findZettel(<f-args>)
+command! -bang FindZettel call fzf#vim#files(g:zettelkasten, <bang>0)
+
 nnoremap <Leader>zf :FindZettel<CR>
 
 " Search the file contents of the zettelkasten with ripgrep and fzf.vim
