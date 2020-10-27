@@ -13,7 +13,6 @@ set cpo&vim
 " zettel-of-the-day
 function! zettel#zettelHome() abort
     execute "edit " . g:zettelkasten . "home.md"
-    execute "Goyo"
 endfunction
 
 " CREATE:
@@ -22,7 +21,6 @@ function! zettel#makeZettel(...) abort
     " Make a unique filename
     let zettelname = g:zettelkasten . strftime("%Y-%m%d-%H%M") . "_" . join(a:000, '-') . '.md'
     execute "edit " . zettelname
-    execute "Goyo"
 endfunction
 
 " Ctags
@@ -36,7 +34,6 @@ endfunction
 " Search for zettels by file name
 function! zettel#findZettel() abort
     execute ":call fzf#vim#files(g:zettelkasten)"
-    execute "Goyo"
 endfunction
 
 " Return compatible options to user's settings
