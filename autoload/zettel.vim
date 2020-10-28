@@ -21,6 +21,7 @@ function! zettel#makeZettel(...) abort
     " Make a unique filename
     let zettelname = g:zettelkasten . join(a:000, '-') . '.md'
     execute "edit " . zettelname
+    execute "-1read " . g:zettelkasten . "template.md"
 endfunction
 
 " Ctags
