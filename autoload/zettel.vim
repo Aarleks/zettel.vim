@@ -12,6 +12,7 @@ set cpo&vim
 " Open the zettelkasten home page and read in the first lines of the
 " zettel-of-the-day
 function! zettel#zettelHome() abort
+    execute "cd " . g:zettelkasten
     execute "edit " . g:zettelkasten . "home.md"
 endfunction
 
