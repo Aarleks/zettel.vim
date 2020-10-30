@@ -23,6 +23,7 @@ function! zettel#makeZettel(...) abort
     let zettelname = g:zettelkasten . join(a:000, '-') . '.md'
     execute "edit " . zettelname
     execute "-1read " . g:zettelkasten . "template.md"
+    execute "normal! 2GA"
 endfunction
 
 " Ctags
