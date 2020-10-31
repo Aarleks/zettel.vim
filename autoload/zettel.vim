@@ -26,11 +26,6 @@ function! zettel#makeZettel(...) abort
     execute "normal! 2GA"
 endfunction
 
-" Ctags
-function! zettel#makeTags() abort
-    execute "silent !ctags -R" . g:zettelkasten
-    "execute "redraw!"
-endfunction
 
 " SEARCH:
 
