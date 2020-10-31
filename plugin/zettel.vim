@@ -30,7 +30,3 @@ nnoremap <Leader>zs :RG ''<CR>
 " <Leader>zt = tag-search the zettelkasten using fzf.vim
 nnoremap <Leader>zt :Tags<CR>
 
-" Search for backlinks to the current Zettel and open the quickfix list with results
-command! -nargs=0 BackLink :execute "grep -F '" . "[[" . expand("%:t") . "]]" .  "'" | :copen
-
-nnoremap <leader>zb :BackLink<CR><CR>
