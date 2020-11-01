@@ -22,7 +22,7 @@ function! zettel#makeZettel(...) abort
     " Make a unique filename
     let zettelname = g:zettelkasten . join(a:000, '-') . '.md'
     execute "edit " . zettelname
-    execute "-1read " . g:zettelkasten . "template.md"
+    execute "-1read " . g:zettelkasten . "/assets/template.md"
     execute "normal! 2GA"
 endfunction
 
@@ -37,6 +37,31 @@ endfunction
 " Search for zettels by file name
 function! zettel#findZettel() abort
     execute ":call fzf#vim#files(g:zettelkasten)"
+endfunction
+
+function! zettel#backlink()
+  let current_file = expand("%:t:r")
+  let filenamepattern = printf('/\[%s[|#\]]/', current_filename)
+  let locations = []
+  let backfiles = zettel#vimwiki#wikigrep(filenamepattern)
+  for file in backfiles
+    " only add backlink if it is not already backlink
+    let is_backlink = s:is_in_backlinks(file, current_filename)
+    if is_backlink < 1
+      " Make sure we don't add ourselves
+      if !(file ==# expand("%:p"))
+        call s:add_bulleted_link(locations, file)
+      endif
+    endif
+  endfor
+
+  if empty(locations)
+    echomsg 'Vimzettel: No other file links to this file'
+  else
+    call uniq(locations)
+    " Insert back links section
+    call s:insert_link_array(g:zettel_backlinks_title, locations)
+  endif
 endfunction
 
 " Return compatible options to user's settings
