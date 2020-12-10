@@ -7,13 +7,12 @@
 let s:save_cpo = &cpo
 set cpo&vim
 
-
 " HOME:
 " Open the zettelkasten home page and read in the first lines of the
 " zettel-of-the-day
 function! zettel#zettelHome() abort
     execute "cd " . g:zettelkasten
-    execute "edit " . g:zettelkasten . "home.md"
+    execute "edit " . g:zettelkasten
 endfunction
 
 " CREATE:
@@ -23,13 +22,8 @@ function! zettel#makeZettel(...) abort
     let zettelname = g:zettelkasten . join(a:000, '-') . '.md'
     execute "edit " . zettelname
     execute "-1read " . g:zettelkasten . "/assets/template.md"
+    " add in filename as title in the document
     execute "normal! 2GA"
-endfunction
-
-" Ctags
-function! zettel#makeTags() abort
-    execute "silent !ctags -R" . g:zettelkasten
-    "execute "redraw!"
 endfunction
 
 " SEARCH:

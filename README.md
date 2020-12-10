@@ -10,27 +10,7 @@ Following Luhmann, Ahrens, and Matuschak, this plugin adheres to the notion of a
 
 In this plugin, zettels are `markdown` files. Write normally.
 
-## Tags
-
-Tags are represented by the hashtag/pound sign `#` in YAML header data.
-
-```
-
-tags: #tag #another_tag
-
-```
-
-The plugin uses [Ultimate CTags](aroist) to build a tag list.
-
-For this to work, you'll need to create a folder `.ctags.d/` in your Zettelkasten folder. Copy the following in to read words that begin with hashtag into your tag stack:
-
-```
---langdef=markdowntags
---languages=markdowntags
---langmap=markdowntags:.md
---kinddef-markdowntags=t,tag,tags
---mline-regex-markdowntags=/(^|[[:space:]])#(\w\S*)/\2/t/{mgroup=1}
-```
+Because tags are 'dumb' and largely a-contextual references, I have not included a tagging function and do not use them myself. If I want to find something, I use the content and filename search functions.
 
 ## References
 
@@ -95,7 +75,7 @@ Type your note | develop knowledge | gain understanding and insight.
 
 [https://vimways.org/2019/personal-notetaking-in-vim/](https://vimways.org/2019/personal-notetaking-in-vim/) - Another vanilla Vim Zettelkasten, this time rolled into a plugin of sorts
 
-Sam Wallage's [Vimwayt post](https://vimways.org/2019/personal-notetaking-in-vim/) on Zettelkasten has a bunch of useful little functions and scripts.
+Sam Wallage's [Vimways post](https://vimways.org/2019/personal-notetaking-in-vim/) on Zettelkasten has a bunch of useful little functions and scripts.
 
 ```
 TODO - note history system (jumplist)
