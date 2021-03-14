@@ -1,14 +1,14 @@
 *zettel.txt* A Vim plugin for building a Luhmann-esque note-box
 
 Author: Alex Norman
-Date: April 2020
+Date: March 2021
 License: Same terms as Vim itself (see |license|)
 
 INTRODUCTION							    *zettel*
 ==============================================================================
 A Zettelkasten is a box of notes. Sometimes it's referred to as a 'slip-box' -
 a box containing slips of paper - with notes about various subject matter.
-These notes serve as an externalised memory repository, and the idea is that as one makes notes connections to other knowledge (other notes in the box, references, and other external sources) should be made. The notes thus become a network of externalised thinking and knowledge. The concept of the wiki is very similar.
+These notes serve as an externalised memory repository, and the idea is that as one makes notes connections to other knowledge (other notes in the box, references, and other external sources) should be made. The notes thus become a network of externalised thinking and knowledge. The concept of the wiki is similar.
 
 For more information about Zettelkasten see: https://zettelkasten.de
 

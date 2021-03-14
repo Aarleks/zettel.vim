@@ -1,24 +1,14 @@
 " For commands and leader combinations
-" <Leader>zl = insert link markers and put the cursor inside <C-x><C-f>
-" <Leader>z
-" <Leader>z
-" <Leader>z
-" <Leader>z
 
-autocmd BufWritePost g:zettelkasten
-	    \ call zettel#makeTags()
-
-" <Leader>zz = open zettelhome
+" open zettelhome
 nnoremap <Leader>zz :call zettel#zettelHome()<CR>
 
-" <Leader>zm = make a new zettel
+" make a new zettel
 command! -nargs=* MakeZettel call zettel#makeZettel(<f-args>)
 nnoremap <Leader>zm :MakeZettel
 
-" <Leader>zf = find a zettel by filename using fzf.vim
-"command! -bang FindZettel call fzf#vim#files(g:zettelkasten, <bang>0)
+" Find a zettel by filename using fzf.vim
 command! -nargs=* FindZettel call zettel#findZettel(<f-args>)
-
 nnoremap <Leader>zf :FindZettel<CR>
 
 " Search the file contents of the zettelkasten with ripgrep and fzf.vim
@@ -26,7 +16,4 @@ nnoremap <Leader>zf :FindZettel<CR>
 command! -bang -nargs=* RG call fzf#vim#grep("rg --no-ignore-parent --column --line-number --no-heading --color=always --smart-case " . <q-args>, 1, <bang>0)
 
 nnoremap <Leader>zs :RG ''<CR>
-
-" <Leader>zt = tag-search the zettelkasten using fzf.vim
-nnoremap <Leader>zt :Tags<CR>
 
