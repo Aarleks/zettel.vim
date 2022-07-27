@@ -21,7 +21,7 @@ function! zettel#makeZettel(...) abort
     " Make a unique filename
     let zettelname = g:zettelkasten . join(a:000, '-') . '.md'
     execute "edit " . zettelname
-    execute "-1read " . g:zettelkasten . "/assets/template.md"
+    execute "-1read " . g:zettelkasten . "/assets/template"
     " add in filename as title in the document
     execute "normal! 2GA"
 endfunction
