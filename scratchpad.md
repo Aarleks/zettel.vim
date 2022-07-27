@@ -3,72 +3,33 @@
 A neovim plugin to assist with management of a Zettelkasten. Lean and simple is the plugin philosophy.
 
 **Questions**
-* Should a zettelkasten be a git repo?
-*
+* Should a zettelkasten be a git repo? Maybe... Certainly adds a potentially useful history of one's thinking about each note. Worth developing.
+* Visualisation of note connections can be helpful; to what extent should these functions exist or be easily callable from within Vim?
 
 ## General
 
-* Declare a zettelkasten directory
-    * currently `g:zettelkasten`
-    * As the idea of a zettelkasten is that it functions as a 'second brain', with the implied notion that there is only one such external memory and elaboration network, at the moment `zettel.vim` only accepts one zettelkasten directory.
+Declare a zettelkasten directory: currently `g:zettelkasten`
+
+Currently `zettel.vim` only accepts a single zettelkasten directory. The Luhmanisch notion of a zettelkasten functions as a 'second brain' carries the implied notion that there is only one such external memory and elaboration network. While this seems somewhat arbitrary, the breaking up of a 'knowledge repository' by subject/domain seems in tension with the aspiration of interconnected thinking. At present, my argument remains for a single notes repository.
 
 ## Change `*.md` Files in Zettelkasten Directory to `zettel` Filetype
 
-* Markdown files in a Zettelkasten are changed to 'zettel' filetype
+* Markdown files in a `g:zettelkasten` could be changed to 'zettel' filetype
 * use pandoc-syntax highlighting
 * filetype-specific keymappings?
 
-## Go To Zettelhome
-
-* Open new buffer
-* Change directory to `g:zettelkasten`
-* Open `zettelhome.md`
-
-## Make a Zettel
+## Make a Zettel - YAML style
 
 * Open a new file in `g:zettelkasten` and take a string as the filename
 * Read the zettel template into the new file
 * Read the filename into the YAML `title:` line and make title case
 * Place the cursor where the first line of the zettel will go and enter Insert mode
 
-## Zettel Filename Search
-
-* Use `fzf` to search zettel filenames
-* Display filename and text
-
-## Zettel Content Search
-
-* Use `fzf` to search zettel file contet
-* Display filename and relevant text
-
-## Backlink Update
-
-* if no backlink file exists (`/zettelkasten/assets/`) create one
-* for each `*.md` file in zettelkasten:
-    * grep for `[[*.md]]` saving only the matching text (i.e. the filename)
-    * for each greped filename:
-	* save filename:linkname in `backlink file`
-* Invoke `Backlink Writer` to append backlinks below `## Backlinks` subheading in each `*.md` file in `g:zettelkasten`
-
 ## Backlink List
 
-* Search `backlink file` for every `value` and get the `key`
+* Search every zettel for `filename`
 * populate the quickfix list with the results
 * Open the quickfix list bottom right and narrow
-
-## Backlink Writer
-
-* For each `*.md` file:
-    * Search `backlink file` for its `value` pair
-    * Make the list of `key:value` pairs unique
-    * Append the `key` data below `## Backlinks` line in file
-
-## Link List
-
-* If current directory is `g:zettelkasten` (or better yet, filetype = zettel?)
-    * search current buffer for `[[*.md]]`
-    * print results to quickfix list
-* Open quickfix list bottom right and narrow
 
 ## Preview Menu
 
@@ -78,7 +39,7 @@ A neovim plugin to assist with management of a Zettelkasten. Lean and simple is 
 
 ## ZettelCare
 
-* Open a floating window (see, e.g. whid.vim) with links to:
+* Open a floating window with links to, e.g.:
     * 5 most recently modified files
     * 5 least recently modified files
     * 3 random files
