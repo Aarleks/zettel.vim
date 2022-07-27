@@ -40,7 +40,7 @@ let g:zettelkasten = 'path/to/your/notes/folder/'
 
 In your notes folder, create a file called `home.md`. This file serves as your `zettelhome` - a landing page for when you want to start thinking inside your notes folder. Populate this file with whatever is helpful for you, perhaps an index of basic rules of use that you develop.
 
-Next, create a basic template markdown file, called `template.md` for new notes. This could be as simple as:
+Next, create a basic template markdown file, called `template` for new notes. This could be as simple as:
 
 ```
 # <title>
@@ -58,7 +58,7 @@ From here, new notes can be created with `<Leader>zm`. You will be asked to type
 :MakeZettel notes should have simple descriptive filenames
 ```
 
-This will create a file called `notes-should-have-simple-descriptive-filenames.md`, and will read `template.md` into it and put you at the end of the second line.
+This will create a file called `notes-should-have-simple-descriptive-filenames.md`, and will read `template` into it and put you at the end of the second line.
 
 Type your note | develop knowledge | gain understanding and insight.
 
@@ -79,7 +79,8 @@ Sam Wallage's [Vimways post](https://vimways.org/2019/personal-notetaking-in-vim
 
 ```
 TODO - note history system (jumplist)
-TODO - update notes with backlinks from other notes
+TODO - pretty Zettel links??
+TODO - auto-populate note title with filename in title case
 
 ```
 
