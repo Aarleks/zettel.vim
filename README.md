@@ -1,8 +1,8 @@
 # Zettel.vim
 
-A Zettelkasten plugin for Vim
+A minimalist Zettelkasten plugin for Vim
 
-A Zettelkasten is a repository of notes that elaborate a single point/thought. It should contain notes (zettel) that are made up of content, tags, references, and links to other notes. It should also be possible to see which other notes point back to a zettel. The idea is to create a network of notes of one's understandings of the world and the way those understandings interconnect.
+A Zettelkasten is a repository of notes that each elaborate a single point/thought. It should contain notes (zettel) that are made up of content, references, and links to other notes. The idea is to create a network of notes that describe one's understandings of the world and the way those understandings interconnect.
 
 Following Luhmann, Ahrens, and Matuschak, this plugin adheres to the notion of a lean but low-friction note creation and editing process. There are few functions and a flat file structure, the text is plain, and the template minimal and customisable.
 
@@ -49,7 +49,6 @@ Next, create a basic template markdown file, called `template` for new notes. Th
 
 ## References
 
-## Backlinks
 ```
 
 From here, new notes can be created with `<Leader>zm`. You will be asked to type a name for the file. Here is an example:
